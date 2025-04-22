@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 10px; border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h1>Employee Information</h1>
+    <h2>Search Employee by ID</h2>
+    <form action="employees" method="get">
+        <label for="empId">Employee ID: </label>
+        <input type="text" name="empId" required>
+        <input type="hidden" name="action" value="search">
+        <input type="submit" value="Search">
+    </form>
+    
+    <h2>All Employees</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <!-- This will be populated dynamically -->
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>Manager</td>
+            <td>50000</td>
+        </tr>
+    </table>
+</body>
+</html>
